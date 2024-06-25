@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: toy-robot-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: toy-robot
+  template:
+    metadata:
+      labels:
+        app: toy-robot
+    spec:
+      containers:
+      - name: toy-robot
+        image: 064772895185.dkr.ecr.eu-central-1.amazonaws.com/toy-robot:latest
+        ports:
+        - containerPort: 80

@@ -1,0 +1,20 @@
+The Toy Robot Challenge involves creating a simulation where a toy robot moves on a 5x5 square tabletop. The key points of the challenge are as follows:
+
+Commands and Movements:
+
+PLACE X,Y,F: This command sets the robot on the table at coordinates X, Y facing North (N), South (S), East (E), or West (W).
+MOVE: Moves the robot one unit forward in the direction it is currently facing.
+LEFT and RIGHT: Rotates the robot 90 degrees to the left or right without moving from its spot.
+REPORT: Outputs the current position and direction of the robot.
+Rules:
+
+The robot must not fall off the edge of the table during movement. Commands that would cause the robot to fall must be ignored.
+Commands are ignored until a valid PLACE command has been executed.
+The bottom left of the grid is considered the coordinate (0,0).
+Inputs and Outputs:
+
+Commands can be given through standard input or from a file.
+For example, if the command sequence is "PLACE 0,0,NORTH", followed by "MOVE", and then "REPORT", the output should be "0,1,NORTH".
+This challenge not only tests your programming skills but also your ability to handle edge cases and follow specifications precisely. It's often used to assess problem-solving skills, coding style, and familiarity with basic programming concepts such as control structures and data types.
+
+Feel free to implement additional features like a graphical user interface or expanded command options if you wish to go beyond the basic requirements. This can be a great way to demonstrate your skills and creativity.
